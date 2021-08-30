@@ -1,6 +1,4 @@
-//Prescription
-
-
+//Pathology
 
 
 
@@ -13,7 +11,7 @@ import 'package:flutterpara/IpdTopEditMenu.dart';
 import 'package:flutter/material.dart';
 
 
-page30() {
+page31() {
 
   return Container(
       child: Column(
@@ -28,7 +26,8 @@ page30() {
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
                 itemBuilder: (context,index){
-                  //for(int i=0;i<menu.length;i++)
+                  //for(int i=0;i<2;i++)
+
                   return InkWell(
                     onTap: (){
                       // setState(() {
@@ -70,7 +69,7 @@ page30() {
                                               Container(
                                                 padding: EdgeInsets.only(left: 8,right: 8),
                                                 width: MediaQuery.of(context).size.width*0.3,
-                                                child: Text("IPD NO",style: TextStyle(
+                                                child: Text("Test Name",style: TextStyle(
                                                     fontWeight: FontWeight.bold,
                                                     color:  Colors.grey
                                                 ),),
@@ -79,7 +78,7 @@ page30() {
                                                 child: Container(
                                                   //   width: MediaQuery.of(context).size.width*0.3,
                                                     alignment: Alignment.centerLeft,
-                                                    child: Text("IPDN 6",style: TextStyle(
+                                                    child: Text("Blood",style: TextStyle(
                                                         fontWeight: FontWeight.bold,
                                                         color: Colors.blue[800]
                                                     ),)),
@@ -93,30 +92,30 @@ page30() {
                                           height: 10,
                                         ),
 
-                                        Container(
-                                          width: MediaQuery.of(context).size.width*0.5,
-                                          child:  Row(
-                                            children: [
-                                              Container(
-                                                padding: EdgeInsets.only(left: 8,right: 8),
-                                                width: MediaQuery.of(context).size.width*0.3,
-                                                child: Text("Date",style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.grey
-                                                ),),
-                                              ),
-                                              Flexible(
-                                                child: Container(
-                                                  //   width: MediaQuery.of(context).size.width*0.3,
-                                                    alignment: Alignment.centerLeft,
-                                                    child: Text("10-08-21",style: TextStyle(
-                                                        fontWeight: FontWeight.bold,
-                                                        color: Colors.grey
-                                                    ),)),
-                                              )
-                                            ],
-                                          ),
-                                        ),
+                                        // Container(
+                                        //   width: MediaQuery.of(context).size.width*0.5,
+                                        //   child:  Row(
+                                        //     children: [
+                                        //       Container(
+                                        //         padding: EdgeInsets.only(left: 8,right: 8),
+                                        //         width: MediaQuery.of(context).size.width*0.3,
+                                        //         child: Text("Date",style: TextStyle(
+                                        //             fontWeight: FontWeight.bold,
+                                        //             color: Colors.grey
+                                        //         ),),
+                                        //       ),
+                                        //       Flexible(
+                                        //         child: Container(
+                                        //           //   width: MediaQuery.of(context).size.width*0.3,
+                                        //             alignment: Alignment.centerLeft,
+                                        //             child: Text("10-08-21",style: TextStyle(
+                                        //                 fontWeight: FontWeight.bold,
+                                        //                 color: Colors.grey
+                                        //             ),)),
+                                        //       )
+                                        //     ],
+                                        //   ),
+                                        // ),
                                         SizedBox(
                                           height: 10,
                                         ),
@@ -175,7 +174,7 @@ page30() {
                                                 Container(
                                                   padding: EdgeInsets.only(left: 8,right: 8),
                                                   width: MediaQuery.of(context).size.width*0.3,
-                                                  child: Text("Prescription No",style: TextStyle(
+                                                  child: Text("Date",style: TextStyle(
                                                       fontWeight: FontWeight.bold,
                                                       color: Colors.grey
                                                   ),),
@@ -184,7 +183,7 @@ page30() {
                                                   child: Container(
                                                     //   width: MediaQuery.of(context).size.width*0.3,
                                                       alignment: Alignment.centerLeft,
-                                                      child: Text("3",style: TextStyle(
+                                                      child: Text("10-08-21",style: TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                           color: Colors.grey,
                                                           fontSize: 12
